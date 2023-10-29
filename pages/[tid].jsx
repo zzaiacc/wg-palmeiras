@@ -74,7 +74,7 @@ export async function getStaticPaths() {
   const teams = await getAllTeams();
 
   const paths = teams.map((team) => ({
-    params: { tid: team.country },
+    params: { tid: team.id },
   }));
   return {
     paths: paths,
