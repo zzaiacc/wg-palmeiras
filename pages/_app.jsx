@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
     <div className="bg-gray-100 lg:w-full md:w-full">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         <link rel="icon" href="/next.svg" />
         <title>Wearing Glory</title>
       </Head>
