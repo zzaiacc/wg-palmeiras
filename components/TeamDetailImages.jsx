@@ -21,7 +21,7 @@ function TeamDetailImages({
 }) {
   return (
     <>
-      <div className="grid lg:flex md:grid-cols-3 sm:grid-cols-2 gap-5 mt-4 sm:w-full">
+      <div className="grid lg:flex md:grid-cols-3 sm:grid-cols-2 gap-5 mt-4 w-full justify-center sm:items-center">
         <div className="flex flex-col text-center shadow-slate-400 shadow-2xl hover:scale-110 duration-500 rounded-b-md   ">
           <span
             className="rounded-t-md p-1 font-semibold"

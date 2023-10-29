@@ -17,3 +17,6 @@ export async function getBrazilTeams() {
 export async function getSpainTeams() {
   return teamsData.filter((team) => team.country === "Spain");
 }
+export async function getEnglandTeams() {
+  return teamsData.filter((team) => team.country === "England");
+}
