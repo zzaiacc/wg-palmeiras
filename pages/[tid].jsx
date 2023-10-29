@@ -73,7 +73,9 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
   const teams = await getAllTeams();
 
-  const paths = teams.map((team) => ({ params: { tid: team.id } }));
+  const paths = teams.map((team) => ({
+    params: { tid: team.country },
+  }));
   return {
     paths: paths,
     fallback: "blocking",

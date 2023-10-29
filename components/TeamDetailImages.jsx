@@ -22,7 +22,7 @@ function TeamDetailImages({
   return (
     <>
       <div className="grid lg:flex md:grid-cols-3 sm:grid-cols-2 gap-5 mt-4 w-full justify-center sm:items-center">
-        <div className="flex flex-col text-center shadow-slate-400 shadow-2xl hover:scale-110 duration-500 rounded-b-md   ">
+        <div className="flex flex-col text-center  hover:scale-110 duration-500 rounded-b-md   ">
           <span
             className="rounded-t-md p-1 font-semibold"
             style={{ background: `${colorHome}`, color: `${colorHomeTwo}` }}
@@ -37,7 +37,7 @@ function TeamDetailImages({
             style={{ borderColor: `${colorHome}` }}
           />
         </div>
-        <div className="flex flex-col text-center shadow-slate-300 shadow-md hover:scale-110 duration-500 rounded-md">
+        <div className="flex flex-col text-center shadow-md hover:scale-110 duration-500 rounded-md">
           <span
             className="rounded-t-md p-1 font-semibold"
             style={{ background: `${colorAway}`, color: `${colorAwayTwo}` }}
@@ -53,7 +53,7 @@ function TeamDetailImages({
           />
         </div>
         {imageThird ? (
-          <div className="flex flex-col text-center shadow-slate-300 shadow-md hover:scale-110 duration-500 rounded-md ">
+          <div className="flex flex-col text-center shadow-md hover:scale-110 duration-500 rounded-md ">
             <span
               className="rounded-t-md p-1 font-semibold"
               style={{ background: `${colorThird}`, color: `${colorThirdTwo}` }}

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "../styles/globals.css";
@@ -5,6 +6,12 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   return (
     <div className="bg-gray-100 lg:w-full md:w-full">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" href="/next.svg" />
+        <title>Wearing Glory</title>
+      </Head>
       <Header />
       <Component {...pageProps} />
       <Footer />

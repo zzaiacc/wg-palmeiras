@@ -31,7 +31,7 @@ export const teamsData = [
     logo: "england/chelsea/logo.png",
     region: "Europe",
     country: "England",
-    colorOne: "dark-blue",
+    colorOne: "blue",
     colorTwo: "white",
     years: [
       {
@@ -81,17 +81,17 @@ export const teamsData = [
     logo: "england/liverpool/logo.png",
     region: "Europe",
     country: "England",
-    colorOne: "white",
-    colorTwo: "red",
+    colorOne: "red",
+    colorTwo: "white",
     years: [
       {
         year: 2023,
-        colorHome: "#b6e7f8",
+        colorHome: "#a5011a",
         colorHomeTwo: "white",
-        colorAway: "#f1daca",
-        colorAwayTwo: "#761b18",
-        colorThird: "#01264b",
-        colorThirdTwo: "#e16b9c",
+        colorAway: "white",
+        colorAwayTwo: "#48c29a",
+        colorThird: "#665984",
+        colorThirdTwo: "white",
         colorSpecial: "black",
         colorSpecialTwo: "white",
         home: "england/liverpool/23.24/home-capa.png",
@@ -135,7 +135,7 @@ export const teamsData = [
     colorTwo: "white",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "#132257",
         colorHomeTwo: "white",
         colorAway: "#132257",
@@ -156,11 +156,11 @@ export const teamsData = [
     logo: "england/united/logo.png",
     region: "Europe",
     country: "England",
-    colorOne: "yellow",
-    colorTwo: "red",
+    colorOne: "red",
+    colorTwo: "white",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "red",
         colorHomeTwo: "white",
         colorAway: "black",
@@ -172,6 +172,62 @@ export const teamsData = [
         home: "england/united/23.24/home-capa.png",
         away: "england/united/23.24/away-capa.png",
         third: "england/united/23.24/third-capa.png",
+      },
+      {
+        year: "22/23",
+        colorHome: "red",
+        colorHomeTwo: "white",
+        colorAway: "white",
+        colorAwayTwo: "red",
+        colorThird: "#c7d817",
+        colorThirdTwo: "white",
+        colorSpecial: "black",
+        colorSpecialTwo: "white",
+        home: "england/united/22.23/home-capa.png",
+        away: "england/united/22.23/away-capa.png",
+        third: "england/united/22.23/third-capa.png",
+      },
+      {
+        year: "21/22",
+        colorHome: "red",
+        colorHomeTwo: "white",
+        colorAway: "#2e9dd8",
+        colorAwayTwo: "red",
+        colorThird: "#0971c4",
+        colorThirdTwo: "yellow",
+        colorSpecial: "black",
+        colorSpecialTwo: "white",
+        home: "england/united/21.22/home-capa.png",
+        away: "england/united/21.22/away-capa.png",
+        third: "england/united/21.22/third-capa.png",
+      },
+      {
+        year: "20/21",
+        colorHome: "red",
+        colorHomeTwo: "white",
+        colorAway: "black",
+        colorAwayTwo: "white",
+        colorThird: "black",
+        colorThirdTwo: "red",
+        colorSpecial: "black",
+        colorSpecialTwo: "white",
+        home: "england/united/20.21/home-capa.png",
+        away: "england/united/20.21/away-capa.png",
+        third: "england/united/20.21/third-capa.png",
+      },
+      {
+        year: "19/20",
+        colorHome: "red",
+        colorHomeTwo: "black",
+        colorAway: "#e1ccb1",
+        colorAwayTwo: "black",
+        colorThird: "black",
+        colorThirdTwo: "red",
+        colorSpecial: "black",
+        colorSpecialTwo: "white",
+        home: "england/united/19.20/home-capa.png",
+        away: "england/united/19.20/away-capa.png",
+        third: "england/united/19.20/third-capa.png",
       },
     ],
   },
@@ -186,7 +242,7 @@ export const teamsData = [
     colorTwo: "red",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "red",
         colorHomeTwo: "white",
         colorAway: "#4e509e",
@@ -211,7 +267,7 @@ export const teamsData = [
     colorTwo: "white",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "red",
         colorHomeTwo: "white",
         colorAway: "#5bbdd2",
@@ -236,7 +292,7 @@ export const teamsData = [
     colorTwo: "#0054a7",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "#0054a7",
         colorHomeTwo: "#bf0046",
         colorAway: "white",
@@ -265,7 +321,7 @@ export const teamsData = [
     colorTwo: "blue",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "blue",
         colorHomeTwo: "white",
         colorAway: "red",
@@ -290,7 +346,7 @@ export const teamsData = [
     colorTwo: "white",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "white",
         colorHomeTwo: "gold",
         colorAway: "black",
@@ -315,7 +371,7 @@ export const teamsData = [
     colorTwo: "white",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "white",
         colorHomeTwo: "red",
         colorAway: "red",
@@ -340,7 +396,7 @@ export const teamsData = [
     colorTwo: "red",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "white",
         colorHomeTwo: "black",
         colorAway: "#063053",
@@ -367,7 +423,7 @@ export const teamsData = [
     colorTwo: "black",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "blue",
         colorHomeTwo: "white",
         colorAway: "white",
@@ -390,7 +446,7 @@ export const teamsData = [
     colorTwo: "white",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "purple",
         colorHomeTwo: "white",
         colorAway: "white",
@@ -413,7 +469,7 @@ export const teamsData = [
     colorTwo: "#FFFFFF",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "#12A0D7",
         colorAway: "#FFFFFF",
         colorThird: "#f56416",
@@ -433,7 +489,7 @@ export const teamsData = [
     colorTwo: "white",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "black",
         colorHomeTwo: "yellow",
         colorAway: "#e295a6",
@@ -456,7 +512,7 @@ export const teamsData = [
     colorTwo: "#000",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "red",
         colorHomeTwo: "white",
         colorAway: "#FFFFFF",
@@ -479,7 +535,7 @@ export const teamsData = [
     colorTwo: "#FFFFFF",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "#12A0D7",
         colorHomeTwo: "white",
         colorAway: "white",
@@ -491,7 +547,7 @@ export const teamsData = [
         third: "italy/napoli/23.24/third-capa.png",
       },
       {
-        year: 2022,
+        year: "22/23",
         colorHome: "#12A0D7",
         colorHomeTwo: "white",
         colorAway: "#FFFFFF",
@@ -528,7 +584,7 @@ export const teamsData = [
     colorTwo: "#F0BC42",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "#8E1F2F",
         colorHomeTwo: "yellow",
         colorAway: "#FFFFFF",
@@ -540,7 +596,7 @@ export const teamsData = [
         third: "italy/roma/23.24/third-capa.png",
       },
       {
-        year: 2022,
+        year: "22/23",
         colorHome: "#8E1F2F",
         colorHomeTwo: "yellow",
         colorAway: "#FFFFFF",
@@ -566,7 +622,7 @@ export const teamsData = [
     colorTwo: "green",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "#32ab66",
         colorHomeTwo: "white",
         colorAway: "white",
@@ -589,7 +645,7 @@ export const teamsData = [
     colorTwo: "white",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "white",
         colorHomeTwo: "red",
         colorAway: "black",
@@ -615,7 +671,7 @@ export const teamsData = [
     colorTwo: "red",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "red",
         colorHomeTwo: "black",
         colorAway: "white",
@@ -638,7 +694,7 @@ export const teamsData = [
     colorTwo: "white",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "#00483c",
         colorHomeTwo: "#b34248",
         colorAway: "#FFFFFF",
@@ -661,7 +717,7 @@ export const teamsData = [
     colorTwo: "white",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "green",
         colorHomeTwo: "#d3f524",
         colorAway: "#FFFFFF",
@@ -673,7 +729,7 @@ export const teamsData = [
         third: "brazil/palmeiras/23.24/third-capa.png",
       },
       {
-        year: 2022,
+        year: "22/23",
         colorHome: "green",
         colorHomeTwo: "white",
         colorAway: "#FFFFFF",
@@ -708,7 +764,7 @@ export const teamsData = [
     colorTwo: "white",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "white",
         colorHomeTwo: "red",
         colorAway: "red",
@@ -731,7 +787,7 @@ export const teamsData = [
     colorTwo: "black",
     years: [
       {
-        year: 2023,
+        year: "23/24",
         colorHome: "white",
         colorHomeTwo: "red",
         colorAway: "red",

@@ -16,7 +16,7 @@ export default function Home({
   englandTeams,
 }) {
   return (
-    <div className=" border-cyan-400">
+    <div className="mx-10 flex flex-col justify-center items-center">
       <div className="flex justify-center text-center items-center gap-5 mt-10 ">
         {englandTeams.map((team) => (
           <div key={team.id}>
