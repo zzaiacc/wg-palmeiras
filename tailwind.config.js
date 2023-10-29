@@ -6,7 +6,13 @@ module.exports = {
   ],
   darkMode: false, // Ou 'media' ou 'class'
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        sm: "640px", // Personalize o breakpoint para telas pequenas
+        md: "768px", // Personalize o breakpoint para telas médias
+        lg: "1024px", // Personalize o breakpoint para telas grandes
+      },
+    },
   },
   variants: {
     extend: {},

@@ -21,8 +21,8 @@ function TeamDetailImages({
 }) {
   return (
     <>
-      <div className="grid lg:flex md:grid-cols-3 sm:grid-cols-2 gap-5 mt-4 w-full justify-center sm:items-center">
-        <div className="flex flex-col text-center  hover:scale-110 duration-500 rounded-b-md   ">
+      <div className="flex flex-wrap justify-center gap-5 mt-4">
+        <div className="flex flex-col text-center hover:scale-110 duration-500 rounded-md">
           <span
             className="rounded-t-md p-1 font-semibold"
             style={{ background: `${colorHome}`, color: `${colorHomeTwo}` }}
@@ -33,7 +33,7 @@ function TeamDetailImages({
             src={imageHome}
             width={200}
             height={225}
-            className="border-4 rounded-b-md "
+            className="border-4 rounded-b-md"
             style={{ borderColor: `${colorHome}` }}
           />
         </div>
@@ -48,12 +48,12 @@ function TeamDetailImages({
             src={imageAway}
             width={200}
             height={225}
-            className="border-4 rounded-b-md "
+            className="border-4 rounded-b-md"
             style={{ borderColor: `${colorAway}` }}
           />
         </div>
-        {imageThird ? (
-          <div className="flex flex-col text-center shadow-md hover:scale-110 duration-500 rounded-md ">
+        {imageThird && (
+          <div className="flex flex-col text-center shadow-md hover:scale-110 duration-500 rounded-md">
             <span
               className="rounded-t-md p-1 font-semibold"
               style={{ background: `${colorThird}`, color: `${colorThirdTwo}` }}
@@ -68,10 +68,9 @@ function TeamDetailImages({
               style={{ borderColor: `${colorThird}` }}
             />
           </div>
-        ) : null}
-        {/* //! CAMISA 4 */}
-        {imageFourth ? (
-          <div className="flex flex-col text-center shadow-slate-300 shadow-md hover:scale-110 duration-500 rounded-md ">
+        )}
+        {imageFourth && (
+          <div className="flex flex-col text-center shadow-slate-300 shadow-md hover:scale-110 duration-500 rounded-md">
             <span
               className="rounded-t-md p-1 font-semibold"
               style={{
@@ -89,10 +88,10 @@ function TeamDetailImages({
               style={{ borderColor: `${colorFourth}` }}
             />
           </div>
-        ) : null}
+        )}
 
-        {imageSpecial1 ? (
-          <div className="flex flex-col text-center shadow-slate-300 shadow-md hover:scale-110 duration-500 rounded-md ">
+        {imageSpecial1 && (
+          <div className="flex flex-col text-center shadow-slate-300 shadow-md hover:scale-110 duration-500 rounded-md">
             <span
               className="rounded-t-md p-1 font-semibold"
               style={{
@@ -110,9 +109,9 @@ function TeamDetailImages({
               style={{ borderColor: `${colorSpecial}` }}
             />
           </div>
-        ) : null}
-        {imageSpecial2 ? (
-          <div className="flex flex-col text-center shadow-slate-300 shadow-md hover:scale-110 duration-500 rounded-md ">
+        )}
+        {imageSpecial2 && (
+          <div className="flex flex-col text-center shadow-slate-300 shadow-md hover:scale-110 duration-500 rounded-md">
             <span
               className="rounded-t-md p-1 font-semibold"
               style={{
@@ -130,9 +129,9 @@ function TeamDetailImages({
               style={{ borderColor: `${colorSpecial}` }}
             />
           </div>
-        ) : null}
-        {imageSpecial3 ? (
-          <div className="flex flex-col text-center shadow-slate-300 shadow-md hover:scale-110 duration-500 rounded-md ">
+        )}
+        {imageSpecial3 && (
+          <div className="flex flex-col text-center shadow-slate-300 shadow-md hover:scale-110 duration-500 rounded-md">
             <span
               className="rounded-t-md p-1 font-semibold"
               style={{
@@ -150,7 +149,7 @@ function TeamDetailImages({
               style={{ borderColor: `${colorSpecial}` }}
             />
           </div>
-        ) : null}
+        )}
       </div>
     </>
   );
