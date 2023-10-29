@@ -31,7 +31,7 @@ export const teamsData = [
     logo: "england/chelsea/logo.png",
     region: "Europe",
     country: "England",
-    colorOne: "blue",
+    colorOne: "dark-blue",
     colorTwo: "white",
     years: [
       {
