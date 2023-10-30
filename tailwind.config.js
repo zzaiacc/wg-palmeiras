@@ -8,9 +8,11 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        sm: "640px", // Personalize o breakpoint para telas pequenas
-        md: "768px", // Personalize o breakpoint para telas médias
-        lg: "1024px", // Personalize o breakpoint para telas grandes
+        xs: "360px", // Exemplo de breakpoint personalizado para telas pequenas
+        sm: "640px", // Padrão para telas pequenas
+        md: "768px", // Padrão para telas médias
+        lg: "1024px", // Padrão para telas grandes
+        xl: "1280px", // Padrão para telas extra grandes
       },
     },
   },

@@ -16,8 +16,8 @@ export default function Home({
   englandTeams,
 }) {
   return (
-    <div className="mx-10 flex flex-col justify-center items-center">
-      <div className="flex justify-center text-center items-center gap-5 mt-10 ">
+    <div className="mx-10 flex flex-col justify-center items-center overflow-x-hidden">
+      <div className="flex justify-center text-center items-center md:gap-3 sm:gap-2 lg:gap-5 mt-10 ">
         {englandTeams.map((team) => (
           <div key={team.id}>
             <TeamsList
@@ -57,19 +57,19 @@ export default function Home({
             </div>
           ))}
         </div>
-        <div className="flex justify-center text-center items-center gap-5 mt-10">
-          {brazilTeams.map((team) => (
-            <div key={team.id}>
-              <TeamsList
-                logo={team.logo}
-                name={team.teamName}
-                colorOne={team.colorOne}
-                colorTwo={team.colorTwo}
-                id={team.id}
-              />
-            </div>
-          ))}
-        </div>
+      </div>
+      <div className="flex justify-center text-center items-center gap-5 mt-10">
+        {brazilTeams.map((team) => (
+          <div key={team.id}>
+            <TeamsList
+              logo={team.logo}
+              name={team.teamName}
+              colorOne={team.colorOne}
+              colorTwo={team.colorTwo}
+              id={team.id}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
