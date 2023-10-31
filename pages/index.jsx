@@ -1,12 +1,11 @@
 import {
-  getAllTeams,
-  getBrazilTeams,
-  getEnglandTeams,
-  getEuropeTeams,
-  getItalyTeams,
-  getSpainTeams,
+  getFeaturedBrazilTeams,
+  getFeaturedEnglandTeams,
+  getFeaturedItalyTeams,
+  getFeaturedSpainTeams,
 } from "../data/teamFunctions";
 import TeamsList from "../components/TeamsList";
+import Link from "next/link";
 
 export default function Home({
   italyTeams,
@@ -16,8 +15,8 @@ export default function Home({
   englandTeams,
 }) {
   return (
-    <div className="mx-10 flex flex-col justify-center items-center overflow-x-hidden">
-      <div className="flex justify-center text-center items-center md:gap-3 sm:gap-2 lg:gap-5 mt-10 ">
+    <div className="mx-6 flex flex-col justify-center items-center">
+      <div className="flex justify-center text-center items-center gap-5 mt-10 ">
         {englandTeams.map((team) => (
           <div key={team.id}>
             <TeamsList
@@ -30,18 +29,28 @@ export default function Home({
           </div>
         ))}
       </div>
-      <div className="flex justify-center text-center items-center gap-5 mt-10">
-        {spainTeams.map((team) => (
-          <div key={team.id}>
-            <TeamsList
-              logo={team.logo}
-              name={team.teamName}
-              colorOne={team.colorOne}
-              colorTwo={team.colorTwo}
-              id={team.id}
-            />
-          </div>
-        ))}
+      <div className="flex flex-col justify-center mt-10 ">
+        <div className="flex justify-end w-full items-center mb-2">
+          {/* <Link href="/spain">
+            <p className=" bg-black p-2 text-white rounded-lg ">
+              See more from
+              <span className="text-red-500 font-semibold"> Spain </span>
+            </p>
+          </Link> */}
+        </div>
+        <div className="flex w-full text-center items-center gap-5 ">
+          {spainTeams.map((team) => (
+            <div key={team.id}>
+              <TeamsList
+                logo={team.logo}
+                name={team.teamName}
+                colorOne={team.colorOne}
+                colorTwo={team.colorTwo}
+                id={team.id}
+              />
+            </div>
+          ))}
+        </div>
       </div>
       <div>
         <div className="flex justify-center text-center items-center gap-5 mt-10">
@@ -76,10 +85,10 @@ export default function Home({
 }
 
 export async function getStaticProps() {
-  const italyTeams = await getItalyTeams();
-  const brazilTeams = await getBrazilTeams();
-  const spainTeams = await getSpainTeams();
-  const englandTeams = await getEnglandTeams();
+  const italyTeams = await getFeaturedItalyTeams();
+  const brazilTeams = await getFeaturedBrazilTeams();
+  const spainTeams = await getFeaturedSpainTeams();
+  const englandTeams = await getFeaturedEnglandTeams();
   // const englandTeams = await getEnglandTeams();
   return {
     props: {

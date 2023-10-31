@@ -1,10 +1,10 @@
 module.exports = {
-  purge: [
+  content: [
     // Caminhos para seus componentes React
     "./components/**/*.jsx",
     "./pages/**/*.jsx",
   ],
-  darkMode: false, // Ou 'media' ou 'class'
+
   theme: {
     extend: {
       screens: {

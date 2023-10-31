@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 function TeamsList({ name, logo, colorOne, colorTwo, id }) {
-  const path = `/${id}`;
+  const path = `${id}`;
   return (
     <div className="flex justify-center hover:scale-110 duration-500 ">
       <Link href={path}>

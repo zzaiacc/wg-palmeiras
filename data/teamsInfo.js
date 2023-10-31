@@ -3,6 +3,7 @@ export const teamsData = [
   {
     id: "arsenal",
     teamName: "Arsenal",
+    isFeatured: true,
     logo: "england/arsenal/logo.png",
     region: "Europe",
     country: "England",
@@ -28,6 +29,7 @@ export const teamsData = [
   {
     id: "chelsea",
     teamName: "Chelsea",
+    isFeatured: true,
     logo: "england/chelsea/logo.png",
     region: "Europe",
     country: "England",
@@ -53,6 +55,7 @@ export const teamsData = [
   {
     id: "city",
     teamName: "City",
+    isFeatured: true,
     logo: "england/city/logo.png",
     region: "Europe",
     country: "England",
@@ -78,6 +81,7 @@ export const teamsData = [
   {
     id: "liverpool",
     teamName: "Liverpool",
+    isFeatured: true,
     logo: "england/liverpool/logo.png",
     region: "Europe",
     country: "England",
@@ -103,6 +107,7 @@ export const teamsData = [
   {
     id: "newcastle",
     teamName: "Newcastle",
+    isFeatured: true,
     logo: "england/newcastle/logo.png",
     region: "Europe",
     country: "England",
@@ -128,6 +133,7 @@ export const teamsData = [
   {
     id: "tottenham",
     teamName: "tottenham",
+    isFeatured: true,
     logo: "england/tottenham/logo.png",
     region: "Europe",
     country: "England",
@@ -153,6 +159,7 @@ export const teamsData = [
   {
     id: "united",
     teamName: "united",
+    isFeatured: true,
     logo: "england/united/logo.png",
     region: "Europe",
     country: "England",
@@ -249,6 +256,7 @@ export const teamsData = [
   {
     id: "atletico-madrid",
     teamName: "Atletico Madrid",
+    isFeatured: true,
     logo: "spain/atletico-madrid/logo.png",
     region: "Europe",
     country: "Spain",
@@ -274,6 +282,7 @@ export const teamsData = [
   {
     id: "athletic-bilbao",
     teamName: "Athletic Bilbao",
+    isFeatured: true,
     logo: "spain/athletic-bilbao/logo.png",
     region: "Europe",
     country: "Spain",
@@ -299,6 +308,7 @@ export const teamsData = [
   {
     id: "barcelona",
     teamName: "Barcelona",
+    isFeatured: true,
     logo: "spain/barcelona/logo.png",
     region: "Europe",
     country: "Spain",
@@ -328,6 +338,7 @@ export const teamsData = [
   {
     id: "espanyol",
     teamName: "Espanyol",
+    isFeatured: true,
     logo: "spain/espanyol/logo.png",
     region: "Europe",
     country: "Spain",
@@ -353,6 +364,7 @@ export const teamsData = [
   {
     id: "realmadrid",
     teamName: "Real Madrid",
+    isFeatured: true,
     logo: "spain/real-madrid/logo.png",
     region: "Europe",
     country: "Spain",
@@ -378,6 +390,7 @@ export const teamsData = [
   {
     id: "sevilla",
     teamName: "Sevilla",
+    isFeatured: true,
     logo: "spain/sevilla/logo.png",
     region: "Europe",
     country: "Spain",
@@ -403,6 +416,7 @@ export const teamsData = [
   {
     id: "valencia",
     teamName: "Valencia",
+    isFeatured: true,
     logo: "spain/valencia/logo.png",
     region: "Europe",
     country: "Spain",
@@ -430,6 +444,7 @@ export const teamsData = [
   {
     id: "atalanta",
     teamName: "Atalanta",
+    isFeatured: true,
     logo: "italy/atalanta/logo.png",
     region: "Europe",
     country: "Italy",
@@ -453,6 +468,7 @@ export const teamsData = [
   {
     id: "fiorentina",
     teamName: "Fiorentina",
+    isFeatured: true,
     logo: "italy/fiorentina/logo.png",
     region: "Europe",
     country: "Italy",
@@ -476,6 +492,7 @@ export const teamsData = [
   {
     id: "internazionale",
     teamName: "Inter Milan",
+    isFeatured: true,
     logo: "italy/internazionale/logo.png",
     region: "Europe",
     country: "Italy",
@@ -496,6 +513,7 @@ export const teamsData = [
   {
     id: "juventus",
     teamName: "Juventus",
+    isFeatured: true,
     logo: "italy/juventus/logo.png",
     region: "Europe",
     country: "Italy",
@@ -519,6 +537,7 @@ export const teamsData = [
   {
     id: "milan",
     teamName: "Milan",
+    isFeatured: true,
     logo: "italy/milan/logo.png",
     region: "Europe",
     country: "Italy",
@@ -542,6 +561,7 @@ export const teamsData = [
   {
     id: "napoli",
     teamName: "Napoli",
+    isFeatured: true,
     logo: "italy/napoli/logo.png",
     region: "Europe",
     country: "Italy",
@@ -591,6 +611,7 @@ export const teamsData = [
   {
     id: "roma",
     teamName: "Roma",
+    isFeatured: true,
     logo: "italy/roma/logo.png",
     region: "Europe",
     country: "Italy",
@@ -629,6 +650,7 @@ export const teamsData = [
   {
     id: "chapecoense",
     teamName: "Chapecoense",
+    isFeatured: true,
     logo: "brazil/chapecoense/logo.png",
     region: "South America",
     country: "Brazil",
@@ -652,6 +674,7 @@ export const teamsData = [
   {
     id: "corinthians",
     teamName: "Corinthians",
+    isFeatured: true,
     logo: "brazil/corinthians/logo.png",
     region: "South America",
     country: "Brazil",
@@ -678,6 +701,7 @@ export const teamsData = [
   {
     id: "flamengo",
     teamName: "Flamengo",
+    isFeatured: true,
     logo: "brazil/flamengo/logo.png",
     region: "South America",
     country: "Brazil",
@@ -701,6 +725,7 @@ export const teamsData = [
   {
     id: "fluminense",
     teamName: "Fluminense",
+    isFeatured: true,
     logo: "brazil/fluminense/logo.png",
     region: "South America",
     country: "Brazil",
@@ -724,6 +749,7 @@ export const teamsData = [
   {
     id: "palmeiras",
     teamName: "Palmeiras",
+    isFeatured: true,
     logo: "brazil/palmeiras/logo.png",
     region: "South America",
     country: "Brazil",
@@ -755,7 +781,7 @@ export const teamsData = [
         third: "brazil/palmeiras/22.23/third-capa.png",
       },
       {
-        year: 2021,
+        year: "21/22",
         colorHome: "green",
         colorHomeTwo: "white",
         colorAway: "#FFFFFF",
@@ -766,11 +792,24 @@ export const teamsData = [
         away: "brazil/palmeiras/21.22/away-capa.png",
         third: "brazil/palmeiras/21.22/third-capa.png",
       },
+      {
+        year: "20/21",
+        colorHome: "#185f58",
+        colorHomeTwo: "white",
+        colorAway: "white",
+        colorAwayTwo: "#185f58",
+        colorThird: "#185f58",
+        colorThirdTwo: "#9bfd4d",
+        home: "brazil/palmeiras/20.21/home-capa.png",
+        away: "brazil/palmeiras/20.21/away-capa.png",
+        third: "brazil/palmeiras/20.21/third-capa.png",
+      },
     ],
   },
   {
     id: "saopaulo",
     teamName: "São Paulo",
+    isFeatured: true,
     logo: "brazil/sao-paulo/logo.png",
     region: "South America",
     country: "Brazil",
@@ -794,6 +833,7 @@ export const teamsData = [
   {
     id: "vasco",
     teamName: "Vasco",
+    isFeatured: true,
     logo: "brazil/vasco/logo.png",
     region: "South America",
     country: "Brazil",

@@ -21,7 +21,7 @@ function TeamDetailImages({
 }) {
   return (
     <>
-      <div className="flex flex-wrap justify-center gap-5 mt-4">
+      <div className="flex flex-wrap justify-center gap-5">
         <div className="flex flex-col text-center hover:scale-110 duration-500 rounded-md">
           <span
             className="rounded-t-md p-1 font-semibold"
