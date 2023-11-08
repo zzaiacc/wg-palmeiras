@@ -1,18 +1,25 @@
-import TeamDetailImages from "../components/TeamDetailImages";
-import { getAllTeams, getTeamById } from "../data/teamFunctions";
+import TeamDetailImages from "../../components/TeamDetailImages";
+import { getAllTeams, getTeamById } from "../../data/teamFunctions";
 
 function teamDetailPage({ selectedTeam }) {
   const colorOne = selectedTeam.colorOne;
   const colorTwo = selectedTeam.colorTwo;
+  const textColor = selectedTeam.textColor;
 
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center items-center">
         <h3
-          className="text-[40px] font-medium w-full text-center"
-          style={{ backgroundColor: `${colorOne}`, color: `${colorTwo}` }}
+          className="text-[40px] font-medium w-full text-center flex justify-center items-center gap-3"
+          style={{ color: `${textColor}` }}
         >
+          <span>
+            <img src={selectedTeam.logo} alt="" className="w-10" />
+          </span>
           {selectedTeam.teamName.toUpperCase()}
+          <span>
+            <img src={selectedTeam.logo} alt="" className="w-10" />
+          </span>
         </h3>
       </div>
 
@@ -24,25 +31,24 @@ function teamDetailPage({ selectedTeam }) {
           >
             {time.year}
           </p>
+          {console.log(time.home)}
           <div className="flex flex-col">
             <TeamDetailImages
               imageHome={time.home}
               imageAway={time.away}
-              imageThird={time.third || null}
-              imageFourth={time.fourth || null}
-              imageSpecial1={time.special1 || null}
-              imageSpecial2={time.special2 || null}
-              imageSpecial3={time.special3 || null}
+              imageThird={time.third}
+              imageFourth={time.fourth}
+              imageSpecial1={time.special1}
+              imageSpecial2={time.special2}
+              imageSpecial3={time.special3}
               colorHome={time.colorHome}
               colorHomeTwo={time.colorHomeTwo}
               colorAway={time.colorAway}
               colorAwayTwo={time.colorAwayTwo}
-              colorThird={time.colorThird || null}
-              colorThirdTwo={time.colorThirdTwo || null}
-              colorFourth={time.colorFourth || null}
-              colorFourthTwo={time.colorFourthTwo || null}
-              colorSpecial={time.colorSpecial || null}
-              colorSpecialTwo={time.colorSpecialTwo || null}
+              colorThird={time.colorThird}
+              colorThirdTwo={time.colorThirdTwo}
+              colorFourth={time.colorFourth}
+              colorFourthTwo={time.colorFourthTwo}
             />
           </div>
         </div>

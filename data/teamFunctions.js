@@ -19,6 +19,10 @@ export async function getAllCountries() {
   return uniqueCountries;
 }
 
+export async function getTeamsByCountry(country) {
+  return teamsData.filter((team) => team.country === country);
+}
+
 //* ALL COUNTRY TEAMS
 export async function getItalyTeams() {
   return teamsData.filter((team) => team.country === "Italy");
@@ -36,21 +40,21 @@ export async function getEnglandTeams() {
 //* FEATURED
 export async function getFeaturedItalyTeams() {
   return teamsData.filter(
-    (team) => team.country === "Italy" && team.isFeatured
+    (team) => team.country === "italy" && team.isFeatured
   );
 }
 export async function getFeaturedBrazilTeams() {
   return teamsData.filter(
-    (team) => team.country === "Brazil" && team.isFeatured
+    (team) => team.country === "brazil" && team.isFeatured
   );
 }
 export async function getFeaturedSpainTeams() {
   return teamsData.filter(
-    (team) => team.country === "Spain" && team.isFeatured
+    (team) => team.country === "spain" && team.isFeatured
   );
 }
 export async function getFeaturedEnglandTeams() {
   return teamsData.filter(
-    (team) => team.country === "England" && team.isFeatured
+    (team) => team.country === "england" && team.isFeatured
   );
 }

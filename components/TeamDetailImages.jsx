@@ -12,8 +12,6 @@ function TeamDetailImages({
   colorAway,
   colorThird,
   colorFourth,
-  colorSpecial,
-  colorSpecialTwo,
   colorHomeTwo,
   colorAwayTwo,
   colorThirdTwo,
@@ -95,8 +93,8 @@ function TeamDetailImages({
             <span
               className="rounded-t-md p-1 font-semibold"
               style={{
-                background: `${colorSpecial}`,
-                color: `${colorSpecialTwo}`,
+                background: "black",
+                color: "white",
               }}
             >
               {imageSpecial1.name}
@@ -106,7 +104,7 @@ function TeamDetailImages({
               width={200}
               height={225}
               className="border-4 rounded-b-md"
-              style={{ borderColor: `${colorSpecial}` }}
+              style={{ borderColor: "black" }}
             />
           </div>
         )}
@@ -115,8 +113,8 @@ function TeamDetailImages({
             <span
               className="rounded-t-md p-1 font-semibold"
               style={{
-                background: `${colorSpecial}`,
-                color: `${colorSpecialTwo}`,
+                background: "black",
+                color: "white",
               }}
             >
               {imageSpecial2.name}
@@ -126,7 +124,7 @@ function TeamDetailImages({
               width={200}
               height={225}
               className="border-4 rounded-b-md"
-              style={{ borderColor: `${colorSpecial}` }}
+              style={{ borderColor: "black" }}
             />
           </div>
         )}
@@ -135,8 +133,8 @@ function TeamDetailImages({
             <span
               className="rounded-t-md p-1 font-semibold"
               style={{
-                background: `${colorSpecial}`,
-                color: `${colorSpecialTwo}`,
+                background: "black",
+                color: "white",
               }}
             >
               {imageSpecial3.name}
@@ -146,7 +144,7 @@ function TeamDetailImages({
               width={200}
               height={225}
               className="border-4 rounded-b-md"
-              style={{ borderColor: `${colorSpecial}` }}
+              style={{ borderColor: "black" }}
             />
           </div>
         )}
