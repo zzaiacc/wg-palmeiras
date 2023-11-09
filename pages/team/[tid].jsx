@@ -8,18 +8,18 @@ function teamDetailPage({ selectedTeam }) {
 
   return (
     <>
-      <div className="flex justify-center items-center">
+      <div
+        className="flex mt-[100px] px-3 py-1 bg w-fit rounded-e-lg"
+        style={{ backgroundColor: `${colorOne}` }}
+      >
         <h3
-          className="text-[40px] font-medium w-full text-center flex justify-center items-center gap-3"
+          className="text-[32px] w-auto text-center font-bold flex items-center gap-3"
           style={{ color: `${textColor}` }}
         >
           <span>
-            <img src={selectedTeam.logo} alt="" className="w-10" />
+            <img src={selectedTeam.logo} alt="" className="w-[70px]" />
           </span>
           {selectedTeam.teamName.toUpperCase()}
-          <span>
-            <img src={selectedTeam.logo} alt="" className="w-10" />
-          </span>
         </h3>
       </div>
 

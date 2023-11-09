@@ -7,7 +7,7 @@ function TeamsByCountry({ teamByCountry }) {
   const colorTwo = teamByCountry.colorTwo;
   console.log(teamByCountry);
   return (
-    <div className="grid lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-4 gap-5 mt-5 justify-center items-center ">
+    <div className="grid lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-4 gap-5  justify-center items-center mt-[150px] mx-[50px]">
       {teamByCountry.map((team) => (
         <div key={team.id}>
           <TeamsList
