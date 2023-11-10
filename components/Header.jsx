@@ -57,13 +57,14 @@ function Header() {
   };
 
   return (
-    <header className="w-full bg-black p-3 flex items-center justify-center fixed z-10">
-      <div className="flex justify-center items-center hover:scale-105 duration-700">
+    <nav className="w-full bg-black p-3 flex items-center z-10">
+      <div className="hover:scale-105 duration-700 justify-start">
         <Link href="/">
           <Image src="/wg-logo.png" width={300} height={50} alt="wg-logo" />
         </Link>
       </div>
-      <div className="flex items-center right-10 fixed ">
+
+      <div className="flex mx-auto">
         <Dropdown
           value={selectedLeague}
           onChange={handleLeague}
@@ -73,7 +74,7 @@ function Header() {
           className="p-dropdown-item p-dropdown-custom p-dropdown-label"
         />
       </div>
-    </header>
+    </nav>
   );
 }
 

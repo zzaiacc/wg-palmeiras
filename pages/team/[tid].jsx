@@ -9,7 +9,7 @@ function teamDetailPage({ selectedTeam }) {
   return (
     <>
       <div
-        className="flex mt-[100px] px-3 py-1 bg w-fit rounded-e-lg"
+        className="flex mt-10 px-3 py-1 bg w-fit rounded-e-lg"
         style={{ backgroundColor: `${colorOne}` }}
       >
         <h3

@@ -16,7 +16,7 @@ export default function Home({
   englandTeams,
 }) {
   return (
-    <div className="mx-6 flex flex-col justify-center items-center mt-[100px]">
+    <div className="mx-6 flex flex-col justify-center items-center">
       {/* //! // // ENGLAND // // // */}
       <div className="flex flex-col justify-center mt-10 ">
         <div className="flex justify-end w-full items-center mb-2">
