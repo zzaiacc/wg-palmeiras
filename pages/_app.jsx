@@ -11,10 +11,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/next.svg" />
         <title>Wearing Glory</title>
       </Head>
-      <div className="bg-gray-50 items-center justify-center sm:overflow-x-hidden text-center w-full h-screen">
-        <Header />
+      <div className="bg-gray-50 items-center justify-center sm:overflow-x-hidden text-center w-full h-[100vh]">
         <Component {...pageProps} />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

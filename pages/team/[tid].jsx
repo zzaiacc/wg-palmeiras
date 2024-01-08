@@ -1,34 +1,30 @@
 import TeamDetailImages from "../../components/TeamDetailImages";
+
 import { getAllTeams, getTeamById } from "../../data/teamFunctions";
 
 function teamDetailPage({ selectedTeam }) {
-  const colorOne = selectedTeam.colorOne;
-  const colorTwo = selectedTeam.colorTwo;
-  const textColor = selectedTeam.textColor;
-
   return (
     <>
       <div
-        className="flex mt-10 px-3 py-1 bg w-fit rounded-e-lg"
-        style={{ backgroundColor: `${colorOne}` }}
+        className="flex font-medium font-contrail w-full p-3 text-[3.5rem]"
+        style={{
+          background: `${selectedTeam.backgroundColor}`,
+        }}
       >
-        <h3
-          className="text-[32px] w-auto text-center font-bold flex items-center gap-3"
-          style={{ color: `${textColor}` }}
-        >
-          <span>
-            <img src={selectedTeam.logo} alt="" className="w-[70px]" />
+        <div className="relative inline-block w-full">
+          <img className="h-[5rem] justify-start " src={selectedTeam.logo} />
+          <span
+            className="absolute font-bebas italic tracking-widest top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-[3.5rem] text-center z-2 "
+            style={{ color: `${selectedTeam.nameColor}` }}
+          >
+            {selectedTeam.teamName.toUpperCase()}{" "}
           </span>
-          {selectedTeam.teamName.toUpperCase()}
-        </h3>
+        </div>
       </div>
 
       {selectedTeam.years.map((time, index) => (
         <div key={index} className="flex flex-col items-center justify-center">
-          <p
-            className="bg-blue-400 w-[150px] text-center rounded-xl font-semibold mt-9 mb-5 p-2"
-            style={{ backgroundColor: `${colorOne}`, color: `${colorTwo}` }}
-          >
+          <p className=" w-[150px] text-center  font-semibold mt-9 mb-5 p-2 border bg-black text-white">
             {time.year}
           </p>
           {console.log(time.home)}
@@ -41,14 +37,6 @@ function teamDetailPage({ selectedTeam }) {
               imageSpecial1={time.special1}
               imageSpecial2={time.special2}
               imageSpecial3={time.special3}
-              colorHome={time.colorHome}
-              colorHomeTwo={time.colorHomeTwo}
-              colorAway={time.colorAway}
-              colorAwayTwo={time.colorAwayTwo}
-              colorThird={time.colorThird}
-              colorThirdTwo={time.colorThirdTwo}
-              colorFourth={time.colorFourth}
-              colorFourthTwo={time.colorFourthTwo}
             />
           </div>
         </div>

@@ -14,6 +14,9 @@ module.exports = {
         lg: "1024px", // Padrão para telas grandes
         xl: "1280px", // Padrão para telas extra grandes
       },
+      fontFamily: {
+        bebas: ["Bebas Neue", "sans-serif"],
+      },
     },
   },
   variants: {

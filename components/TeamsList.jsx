@@ -15,8 +15,7 @@ function TeamsList({ name, logo, textColor, id }) {
           style={{ color: `${textColor}` }}
         >
           <p className="font-semibold md:text-[12px] sm:text-[7px]">
-            {" "}
-            {name.toUpperCase()}{" "}
+            {name.toUpperCase()}
           </p>
         </div>
       </Link>
