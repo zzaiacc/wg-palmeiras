@@ -12,11 +12,16 @@ export default function Home({ featuredShirts }) {
     <main className="overflow-hidden">
       <Hero />
       <div className="lg:mt-[159px] xs:mt-[30px] lg:w-[80vw] mx-auto lg:mb-10">
-        <div className="flex py-5 items-center ">
+        <div className="flex py-5 items-center mb-[150px]">
           <div className="flex-grow border-t border-green-600 " />
-          <h2 className=" flex-shrink mx-auto px-10 text-green-600 text-[50px] font-medium">
-            CAMISAS
-          </h2>
+          <div>
+            <h1 className=" flex-shrink mx-auto px-10 text-green-600 text-[80px] font-medium">
+              CAMISAS
+            </h1>
+            <p className=" flex-shrink mx-auto  text-green-600 text-center font-medium mt-[-15px]">
+              Veja as camisas que nos levaram a glória
+            </p>
+          </div>
           <div className="flex-grow border-t border-green-600 " />
         </div>
 
@@ -29,8 +34,8 @@ export default function Home({ featuredShirts }) {
         </div>
         <div className="flex justify-center w-[80vw] mx-auto">
           <Link href={"/"}>
-            <div className="bg-green-600  px-10 py-3 text-white font-bold tracking-widest hover:bg-white duration-300">
-              <h2> Ver mais </h2>
+            <div className="bg-green-600  px-10 py-3 text-white tracking-[5px] hover:bg-white duration-300 hover:text-green-600 border-transparent border-2 hover:border-green-600 hover:scale-[90%]">
+              <h1> Ver mais </h1>
             </div>
           </Link>
         </div>

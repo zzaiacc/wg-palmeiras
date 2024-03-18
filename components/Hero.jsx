@@ -22,9 +22,9 @@ const Hero = ({}) => {
       >
         <NavBar />
 
-        <div className="text-center text-white  mt-[50px]  uppercase lg:leading-none tracking-tighter xs:leading-3 md:leading-6 sm:leading-5">
-          <h4 className="text-[2vw] font-bold">Nunca dê como morto </h4> <br />
-          <span className="text-[9vw] font-black"> um gigante</span>
+        <div className="text-center text-white  mt-[50px]  uppercase lg:leading-[50px] tracking-tighter xs:leading-3 md:leading-6 sm:leading-5">
+          <h1 className="text-[2vw] font-bold">Nunca dê como morto </h1> <br />
+          <h1 className="text-[9vw] font-black"> um gigante</h1>
         </div>
       </div>
 

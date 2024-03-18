@@ -2,19 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Contrail+One&family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url("https://fonts.cdnfonts.com/css/harmony-3");
 body {
   overflow-x: hidden;
   background-color: rgb(230, 230, 230);
 }
 
 h1 {
-  font-family: "Display";
-}
-
-h3 {
-  font-family: "Italiana", sans-serif;
-  font-weight: 400;
+  font-family: "HARMONY";
 }
 
 p,

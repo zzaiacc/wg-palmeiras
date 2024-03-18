@@ -20,10 +20,9 @@ const CamisaDetails = ({ teamByCid }) => {
         </h3>
         <div>
           {titulos.map((title, index) => (
-            <h4 className="px-10 py-3 text-white" key={index}>
-              {" "}
-              {title} {teamByCid.year}{" "}
-            </h4>
+            <h3 className="px-10 py-3 text-white text-center" key={index}>
+              {title}
+            </h3>
           ))}{" "}
         </div>
       </div>

@@ -22,7 +22,11 @@ const jerseys = [
     category: "Third",
     cid: "third2023",
     photo: "/endrick_card.svg",
-    titulos: ["Não há titulos em"],
+    titulos: [
+      "Campeonato Brasileiro",
+      "Campeonato Paulista",
+      "Supercopa do Brasil",
+    ],
     card: true,
   },
   {
