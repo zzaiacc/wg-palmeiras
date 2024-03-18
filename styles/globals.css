@@ -1,64 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Contrail+One&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Contrail+One&family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  overflow-x: hidden;
+  background-color: rgb(230, 230, 230);
 }
 
-h1,
-h2,
+h1 {
+  font-family: "Display";
+}
+
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
 }
 
-p {
-  font-family: "Montserrat", sans-serif;
+p,
+a,
+h2 {
+  font-family: "Poppins", sans-serif;
 }
 
-.p-dropdown-items-wrapper {
-  border-radius: 5px;
+h4 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.p-dropdown-label {
-  border-radius: 5px;
-  font-weight: bold;
-  transition: 500ms;
+.slide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
-.p-dropdown-label:hover {
-  color: rgb(233, 172, 233);
+
+.slide.current {
+  opacity: 1;
 }
-.p-dropdown-custom {
-  background-color: white;
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   color: white;
-  border: 2px solid white;
-  border-radius: 10px;
-  font-size: 1em;
-  width: 150px;
-  height: auto;
-  align-items: center;
+  font-size: 2em;
 }
-
-.p-dropdown-item {
-  background-color: black;
-  color: white;
-  justify-content: center;
-  display: flex;
-  padding: 2px;
-  font-weight: bold;
-}
-
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */

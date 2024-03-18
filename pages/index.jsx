@@ -1,195 +1,49 @@
-import {
-  getFeaturedBrazilTeams,
-  getFeaturedEnglandTeams,
-  getFeaturedItalyTeams,
-  getFeaturedSpainTeams,
-} from "../data/teamFunctions";
+import React from "react";
+import Hero from "../components/Hero";
+import Camisas from "../components/Camisas";
 
-import { database } from "../data/db";
+// import Image from "next/image";
+// import Link from "next/link";
+import { getCards } from "../data/dataFunctions";
+import Link from "next/link";
 
-import LeagueList from "../components/LeagueList";
-import Header from "../components/Header";
-import { firebase } from "../data/db";
-
-export default function Home({
-  italyTeams,
-  brazilTeams,
-  nationalTeams,
-  spainTeams,
-  englandTeams,
-}) {
-  const leagues = [
-    {
-      league: "Brasil",
-      img: "/brazil/capa_site.png",
-      path: "/brazil",
-    },
-    {
-      league: "England",
-      img: "/england/capa_site.png",
-      path: "/england",
-    },
-    {
-      league: "España",
-      img: "/spain/capa_site.png",
-      path: "/spain",
-    },
-    {
-      league: "Italia",
-      img: "/italy/capa_site.png",
-      path: "/italy",
-    },
-  ];
+export default function Home({ featuredShirts }) {
   return (
-    <>
-      <Header />
-      <div className="w-full">
-        {leagues.map((leagues) => (
-          <LeagueList
-            path={leagues.path}
-            img={leagues.img}
-            league={leagues.league}
-          />
-        ))}
-      </div>
-      {/* <div className="mx-6 flex flex-col justify-center items-center mb-[5rem]">
-        
-        <div className="flex flex-col justify-center mt-10 ">
-          <div className="flex justify-end w-full items-center mb-2">
-            <Link href="/england">
-              <p className="group hover:scale-110 duration-500 p-2 rounded-md group-hover:text-red-500 flex items-center ">
-                <span className="group-hover:text-red-500 font-semibold duration-500">
-                  <AddIcon />
-                </span>
-                &nbsp; More from&nbsp;
-                <span className="group-hover:text-red-500 font-semibold duration-500">
-                  England
-                </span>
-              </p>
-            </Link>
-          </div>
+    <main className="overflow-hidden">
+      <Hero />
+      <div className="lg:mt-[159px] xs:mt-[30px] lg:w-[80vw] mx-auto lg:mb-10">
+        <div className="flex py-5 items-center ">
+          <div className="flex-grow border-t border-green-600 " />
+          <h2 className=" flex-shrink mx-auto px-10 text-green-600 text-[50px] font-medium">
+            CAMISAS
+          </h2>
+          <div className="flex-grow border-t border-green-600 " />
+        </div>
 
-          <div className="flex justify-center text-center items-center gap-5  ">
-            {englandTeams.map((team) => (
-              <div key={team.id}>
-                <TeamsList
-                  logo={team.logo}
-                  name={team.teamName}
-                  colorOne={team.colorOne}
-                  colorTwo={team.colorTwo}
-                  id={team.id}
-                />
-              </div>
+        <div className="mt-[159px] xs:mt-[80px] mx-auto mb-10 w-[80vw] flex justify-center">
+          <div className="gap-[100px] grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+            {featuredShirts.map((featuredShirts) => (
+              <Camisas featuredShirts={featuredShirts} />
             ))}
           </div>
         </div>
-     
-        <div className="flex flex-col justify-center mt-10 ">
-          <div className="flex justify-end w-full items-center mb-2">
-            <Link href="/spain">
-              <p className="group hover:scale-110 duration-500 p-2 rounded-md group-hover:text-red-500 flex items-center ">
-                <span className="group-hover:text-red-500 font-semibold duration-500">
-                  <AddIcon />
-                </span>
-                &nbsp; Más de&nbsp;
-                <span className="group-hover:text-red-500 font-semibold duration-500">
-                  España
-                </span>
-              </p>
-            </Link>
-          </div>
-          <div className="flex w-full text-center items-center gap-5 ">
-            {spainTeams.map((team) => (
-              <div key={team.id}>
-                <TeamsList
-                  logo={team.logo}
-                  name={team.teamName}
-                  colorOne={team.colorOne}
-                  colorTwo={team.colorTwo}
-                  id={team.id}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-  
-        <div className="flex flex-col justify-center mt-10 ">
-          <div className="flex justify-end w-full items-center mb-2">
-            <Link href="/italy">
-              <p className="group hover:scale-110 duration-500 p-2 rounded-md group-hover:text-red-500 flex items-center ">
-                <span className="group-hover:text-red-500 font-semibold duration-500">
-                  <AddIcon />
-                </span>
-                &nbsp; più dall'&nbsp;
-                <span className="group-hover:text-red-500 font-semibold duration-500">
-                  Italia
-                </span>
-              </p>
-            </Link>
-          </div>
-          <div className="flex justify-center text-center items-center gap-5">
-            {italyTeams.map((team) => (
-              <div key={team.id}>
-                <TeamsList
-                  logo={team.logo}
-                  name={team.teamName}
-                  colorOne={team.colorOne}
-                  colorTwo={team.colorTwo}
-                  id={team.id}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
-       
-        <div className="flex flex-col justify-center mt-10 ">
-          <div className="flex justify-end w-full items-center mb-2">
-            <Link href="/brazil">
-              <p className="group hover:scale-110 duration-500 p-2 rounded-md group-hover:text-red-500 flex items-center ">
-                <span className="group-hover:text-red-500 font-semibold duration-500">
-                  <AddIcon />
-                </span>
-                &nbsp; Mais do&nbsp;
-                <span className="group-hover:text-red-500 font-semibold duration-500">
-                  Brasil
-                </span>
-              </p>
-            </Link>
-          </div>
-
-          <div className="flex justify-center text-center items-center gap-5">
-            {brazilTeams.map((team) => (
-              <div key={team.id}>
-                <TeamsList
-                  logo={team.logo}
-                  name={team.teamName}
-                  colorOne={team.colorOne}
-                  colorTwo={team.colorTwo}
-                  id={team.id}
-                />
-              </div>
-            ))}
-          </div>
+        <div className="flex justify-center w-[80vw] mx-auto">
+          <Link href={"/"}>
+            <div className="bg-green-600  px-10 py-3 text-white font-bold tracking-widest hover:bg-white duration-300">
+              <h2> Ver mais </h2>
+            </div>
+          </Link>
         </div>
       </div>
-      <Footer /> */}
-    </>
+    </main>
   );
 }
 
 export async function getStaticProps() {
-  const italyTeams = await getFeaturedItalyTeams();
-  const brazilTeams = await getFeaturedBrazilTeams();
-  const spainTeams = await getFeaturedSpainTeams();
-  const englandTeams = await getFeaturedEnglandTeams();
-  // const englandTeams = await getEnglandTeams();
+  const featuredShirts = await getCards();
   return {
     props: {
-      italyTeams: italyTeams,
-      brazilTeams: brazilTeams,
-      spainTeams: spainTeams,
-      englandTeams: englandTeams,
+      featuredShirts: featuredShirts,
     },
   };
 }

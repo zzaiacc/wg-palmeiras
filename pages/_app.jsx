@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -11,9 +9,8 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/next.svg" />
         <title>Wearing Glory</title>
       </Head>
-      <div className="bg-gray-50 items-center justify-center sm:overflow-x-hidden text-center w-full h-[100vh]">
+      <div className="overflow-hidden">
         <Component {...pageProps} />
-        {/* <Footer /> */}
       </div>
     </>
   );

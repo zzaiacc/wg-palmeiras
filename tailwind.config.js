@@ -1,10 +1,10 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    // Caminhos para seus componentes React
-    "./components/**/*.jsx",
-    "./pages/**/*.jsx",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-
   theme: {
     extend: {
       screens: {
@@ -14,13 +14,7 @@ module.exports = {
         lg: "1024px", // Padrão para telas grandes
         xl: "1280px", // Padrão para telas extra grandes
       },
-      fontFamily: {
-        bebas: ["Bebas Neue", "sans-serif"],
-      },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 };
