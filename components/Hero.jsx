@@ -31,7 +31,7 @@ const Hero = ({}) => {
       <div className="flex">
         <Image
           src={endrick}
-          className="absolute bottom-0 left-[10%] w-[30vw]"
+          className="absolute bottom-0 left-[10%] w-[30vw] "
         />
         <Image src={dudu1957} className="absolute bottom-0 left-0 w-[16vw]" />
         <Image src={marcos} className="absolute bottom-0 left-[21%] w-[24vw]" />
