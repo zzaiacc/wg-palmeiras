@@ -12,9 +12,9 @@ import NavBar from "./NavBar";
 
 const Hero = ({}) => {
   return (
-    <div className="relative h-screen xs:h-[40vh] lg:h-screen md:h-[70vh] sm:h-[60vh]">
+    <div className="relative h-screen xs:h-[340px] lg:h-screen md:h-[70vh] sm:h-[60vh]">
       <div
-        className="h-screen  w-[100vw] bg-cover md:h-[70vh]  lg:h-screen xs:h-[40vh] sm:h-[60vh]"
+        className="h-screen  w-[100vw] bg-cover md:h-[70vh]  lg:h-screen xs:h-[340px] sm:h-[60vh]"
         style={{
           backgroundImage: `url(${bgHero.src})`,
           backgroundRepeat: "no-repeat",
@@ -22,7 +22,7 @@ const Hero = ({}) => {
       >
         <NavBar />
 
-        <div className="text-center text-white  mt-[50px]  uppercase lg:leading-[50px] tracking-tighter xs:leading-3 md:leading-6 sm:leading-5">
+        <div className="text-center mt-[50px]  uppercase lg:leading-[50px] tracking-tighter xs:leading-3 md:leading-6 sm:leading-5 text-green-500">
           <h1 className="text-[2vw] font-bold">Nunca dê como morto </h1> <br />
           <h1 className="text-[9vw] font-black"> um gigante</h1>
         </div>
@@ -43,7 +43,7 @@ const Hero = ({}) => {
         />
         <Image
           src={veiga}
-          className="absolute bottom-0 lg:right-[15%] lg:w-[30vw] xs:w-[42%] xs:right-8"
+          className="absolute bottom-0 lg:right-[15%] lg:w-[30vw] xs:w-[42%] xs:right-10"
         />
         <Image
           src={ademirDaGuia}
