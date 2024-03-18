@@ -31,19 +31,28 @@ const Hero = ({}) => {
       <div className="flex">
         <Image
           src={endrick}
-          className="absolute bottom-0 left-[10%] w-[30vw] "
+          className="absolute bottom-0 lg:left-[10%] lg:w-[30vw] xs:w-[41%] left-3 "
         />
-        <Image src={dudu1957} className="absolute bottom-0 left-0 w-[16vw]" />
-        <Image src={marcos} className="absolute bottom-0 left-[21%] w-[24vw]" />
-        <Image src={veiga} className="absolute bottom-0 right-[15%] w-[30vw]" />
+        <Image
+          src={dudu1957}
+          className="absolute bottom-0 left-0 lg:w-[16vw] xs:w-[20%]"
+        />
+        <Image
+          src={marcos}
+          className="absolute bottom-0 lg:left-[21%] lg:w-[24vw] xs:w-[30%] xs:left-[14%]"
+        />
+        <Image
+          src={veiga}
+          className="absolute bottom-0 lg:right-[15%] lg:w-[30vw] xs:w-[42%] xs:right-8"
+        />
         <Image
           src={ademirDaGuia}
-          className="absolute bottom-0 right-[35%] w-[35vw]"
+          className="absolute bottom-0 lg:right-[35%] lg:w-[35vw] xs:w-[48%] xs:right-[30%]"
         />
         <Image src={djalma} className="absolute bottom-0 w-[18vw] right-0" />
         <Image
           src={dudu}
-          className="absolute bottom-0 right-[1.3%] w-[35vw] "
+          className="absolute bottom-0 lg:right-[1.3%] lg:w-[35vw] xs:w-[40%] xs:right-[1.3%]"
         />
       </div>
 
