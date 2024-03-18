@@ -12,7 +12,7 @@ const Camisas = ({ featuredShirts }) => {
             width={300}
             height={300}
             alt="flaco"
-            className="absolute bottom-0 right-0 "
+            className="absolute bottom-0 right-0"
           />
           <span className="text-green-600">
             <h2 className="font-semibold text-[50px]">
