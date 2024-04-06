@@ -8,7 +8,6 @@ function JerseyDetail({ teamByCid }) {
     <>
       <div className="h-screen bg-green-900 relative">
         <NavBar />
-
         <CamisaDetails teamByCid={teamByCid} />
       </div>
     </>
