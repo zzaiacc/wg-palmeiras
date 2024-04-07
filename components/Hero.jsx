@@ -22,7 +22,7 @@ const Hero = ({}) => {
       >
         <NavBar />
 
-        <div className="text-center mt-[50px]  uppercase lg:leading-[50px] tracking-tighter xs:leading-3 md:leading-6 sm:leading-5 text-white">
+        <div className="text-center mt-[50px]  uppercase lg:leading-[50px] font-displaytracking-tighter xs:leading-3 md:leading-6 sm:leading-5 text-white">
           <h1 className="text-[2vw] font-bold tracking-wider">
             Quando surge o alviverde{" "}
           </h1>{" "}

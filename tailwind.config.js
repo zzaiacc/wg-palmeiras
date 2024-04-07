@@ -6,6 +6,9 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Poppins", "Bebas Neue", "sans-serif"],
+    },
     extend: {
       screens: {
         xs: "360px", // Exemplo de breakpoint personalizado para telas pequenas

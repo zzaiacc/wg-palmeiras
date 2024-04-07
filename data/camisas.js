@@ -8,6 +8,8 @@ const jerseys = [
     camisaImg: "/camisa_2024_home.svg",
     titulos: ["Não há titulos em"],
     card: true,
+    nextYear: "2024",
+    nextCategory: "Away",
   },
   {
     year: 2024,
@@ -19,6 +21,10 @@ const jerseys = [
     camisaImg: "/camisa_2024_away.svg",
     titulos: ["Não há titulos em"],
     card: true,
+    nextYear: "2023",
+    nextCategory: "Third",
+    prevYear: "2024",
+    prevCategory: "Home",
   },
   {
     year: 2023,
@@ -26,6 +32,7 @@ const jerseys = [
     cid: "third2023",
     nextShirt: "home2023",
     prevShirt: "away2024",
+    camisaImg: "/camisa_2023_third.svg",
     photo: "/endrick_card.svg",
     titulos: [
       "Campeonato Brasileiro",
@@ -33,6 +40,10 @@ const jerseys = [
       "Supercopa do Brasil",
     ],
     card: true,
+    nextYear: "2023",
+    nextCategory: "Home",
+    prevYear: "2024",
+    prevCategory: "Away",
   },
   {
     year: 2023,
@@ -42,6 +53,10 @@ const jerseys = [
     photo: "/gg_card.svg",
     titulos: ["Não há titulos em"],
     card: true,
+    nextYear: "2023",
+    nextCategory: "Away",
+    prevYear: "2023",
+    prevCategory: "Third",
   },
   {
     year: 2023,
