@@ -11,18 +11,18 @@ export default function Home({ featuredShirts }) {
   return (
     <main className="overflow-hidden">
       <Hero />
-      <div className="lg:mt-[20vh] xs:mt-[100px] lg:mb-5 max-w-[1320px] mx-auto">
-        <div className="flex mt-[10vh] items-center mb-[90px]">
+      <div className="lg:mt-[20vh] xs:mt-[100px] lg:mb-10 max-w-[1320px] mx-auto">
+        <div className="flex  items-center">
           <div className="flex-grow border-t border-green" />
           <div className="flex flex-col lg:mx-10">
-            <h4 className="flex-shrink lg:px-10 text-green text-[80px] font-medium ">
+            <h1 className="flex-shrink lg:px-10 text-green text-[80px] font-medium uppercase tracking-widest">
               Mantos da Glória
-            </h4>
+            </h1>
           </div>
           <div className="flex-grow border-t border-green " />
         </div>
 
-        <div className="lg:mt-[159px] xs:mt-[40px] items-center mb-10 flex justify-center">
+        <div className="lg:mt-[5vh] xs:mt-[40px] items-center mb-10 flex justify-center">
           <div className="lg:gap-[100px] xs:gap-[110px] grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
             {featuredShirts.map((featuredShirts) => (
               <Camisas featuredShirts={featuredShirts} />
