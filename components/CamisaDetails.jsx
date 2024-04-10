@@ -18,7 +18,7 @@ const CamisaDetails = ({ teamByCid }) => {
       >
         <NavBar />
         <div className=" mx-auto  w-[80vw]">
-          <div className="lg:mt-[20vh] xs:mt-[6vh] justify-between flex w-[100%] lg:text-[10vw] xs:text-[10vw] text-white  font-black cursor-default">
+          <div className="lg:mt-[20vh] xs:mt-[6vh] lg:justify-between xs:justify-center gap-10 flex w-[100%] lg:text-[10vw] xs:text-[10vw] text-white  font-black cursor-default">
             <div>
               <h3>{teamByCid.year} </h3>
             </div>
@@ -26,13 +26,13 @@ const CamisaDetails = ({ teamByCid }) => {
               <h3> {teamByCid.category}</h3>
             </div>
           </div>
-          <div className="absolute bottom-0 lg:left-1/2 lg:transform lg:-translate-x-1/2 sm:left-1/2  sm:transform sm:-translate-x-1/2 md:left-1/2  md:transform md:-translate-x-1/2 xs:left-1/2  xs:transform xs:-translate-x-1/2">
+          <div className="absolute bottom-0 lg:left-1/2 lg:transform lg:-translate-x-1/2 sm:left-1/2  sm:transform sm:-translate-x-1/2 md:left-1/2  md:transform md:-translate-x-1/2 xs:left-0">
             <Image
               src={teamByCid.camisaImg}
               width={1000}
-              height={100}
+              height={1000}
               alt="endrick"
-              className=" lg:w-[30vw] md:w-[90w] sm:w-[60vw] xs:w-[80vw]"
+              className=" lg:w-[30vw] md:w-[90w] sm:w-[60vw] xs:w-[1000000px]"
             />
           </div>
         </div>
