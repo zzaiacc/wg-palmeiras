@@ -22,14 +22,14 @@ const Hero = ({}) => {
       >
         <NavBar />
 
-        <div className="text-center mt-[50px]  uppercase lg:leading-[50px] font-displaytracking-tighter xs:leading-3 md:leading-6 sm:leading-5 text-white">
+        <div className="text-greenLight text-center mt-[50px]  uppercase lg:leading-[5vh]  tracking-tighter xs:leading-3 md:leading-6 sm:leading-5 ">
           <h1 className="text-[2vw] font-bold tracking-wider">
-            Quando surge o alviverde{" "}
+            " Quando surge o alviverde{" "}
           </h1>{" "}
           <br />
-          <h1 className="text-[9vw] font-semibold tracking-widest">
+          <h1 className="text-[9vw] font-semibold tracking-[2vw]">
             {" "}
-            Imponente
+            Imponente"
           </h1>
         </div>
       </div>
@@ -62,8 +62,8 @@ const Hero = ({}) => {
         />
       </div>
 
-      <div className="w-[100vw] bg-green-200 absolute bottom-[-5%] -rotate-1 lg:h-[9vh]  xs:h-[3vh]  md:h-[5vh] flex justify-center ">
-        <h2 className="lg:text-[6vh] xs:text-[2vh] md:text-[4vh] font-black leading-tight text-center whitespace-nowrap text-green-900 ">
+      <div className="w-[100vw] bg-greenLight absolute bottom-[-5%] -rotate-1 lg:h-[9vh]  xs:h-[3vh]  md:h-[5vh] flex justify-center ">
+        <h2 className="lg:text-[6vh] xs:text-[2vh] md:text-[4vh] font-black leading-tight text-center whitespace-nowrap text-white ">
           PALMEIRAS PALMEIRAS PALMEIRAS PALMEIRAS PALMEIRAS PALMEIRAS
         </h2>
       </div>

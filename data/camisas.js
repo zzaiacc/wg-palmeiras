@@ -74,6 +74,30 @@ const jerseys = [
     titulos: ["Não há titulos em"],
     card: true,
   },
+  {
+    year: 2022,
+    category: "Third",
+    cid: "third2023",
+    photo: "/danilo_card.svg",
+    titulos: ["Não há titulos em"],
+    card: true,
+  },
+  {
+    year: 2022,
+    category: "Third",
+    cid: "third2023",
+    photo: "/scarpa_card.svg",
+    titulos: ["Não há titulos em"],
+    card: true,
+  },
+  {
+    year: 2021,
+    category: "Home",
+    cid: "home2021",
+    photo: "/scarpa_card.svg",
+    titulos: ["Não há titulos em"],
+    card: false,
+  },
 ];
 
 export default jerseys;

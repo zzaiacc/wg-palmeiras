@@ -6,8 +6,13 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-      sans: ["Poppins", "Bebas Neue", "sans-serif"],
+    colors: {
+      limeGreen: "#CFF434",
+      green: "#11D200",
+      greenLight: "#00FF75",
+      greenDark: "#003A10",
+      red: "#DD0C0C",
+      white: "#fff",
     },
     extend: {
       screens: {

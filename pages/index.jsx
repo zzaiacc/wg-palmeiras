@@ -11,30 +11,27 @@ export default function Home({ featuredShirts }) {
   return (
     <main className="overflow-hidden">
       <Hero />
-      <div className="lg:mt-[159px] xs:mt-[100px] lg:mb-10 max-w-[1314px] mx-auto">
+      <div className="lg:mt-[20vh] xs:mt-[100px] lg:mb-5 max-w-[1320px] mx-auto">
         <div className="flex mt-[10vh] items-center mb-[90px]">
-          <div className="flex-grow border-t border-green-600" />
+          <div className="flex-grow border-t border-green" />
           <div className="flex flex-col lg:mx-10">
-            <h4 className="flex-shrink lg:px-10 text-green-600 text-[80px] font-medium ">
-              CAMISAS
+            <h4 className="flex-shrink lg:px-10 text-green text-[80px] font-medium ">
+              Mantos da Glória
             </h4>
-            <p className=" flex-shrink  text-green-600 text-center font-medium mt-[-15px] ">
-              Veja as camisas que nos levaram a glória
-            </p>
           </div>
-          <div className="flex-grow border-t border-green-600 " />
+          <div className="flex-grow border-t border-green " />
         </div>
 
         <div className="lg:mt-[159px] xs:mt-[40px] items-center mb-10 flex justify-center">
-          <div className="gap-[100px] grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+          <div className="lg:gap-[100px] xs:gap-[110px] grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
             {featuredShirts.map((featuredShirts) => (
               <Camisas featuredShirts={featuredShirts} />
             ))}
           </div>
         </div>
-        <div className="flex justify-center w-[80vw] mx-auto">
+        <div className="flex justify-center mx-auto">
           <Link href={"/"}>
-            <div className="bg-green-600  px-10 py-3 text-white tracking-[5px] hover:bg-white duration-300 hover:text-green-600 border-transparent border-2 hover:border-green-600 hover:scale-[90%]">
+            <div className="bg-green  px-10 py-3 text-white tracking-[5px] hover:bg-white duration-300 hover:text-green border-transparent border-2 hover:border-green hover:scale-[90%]">
               <h1> Ver mais </h1>
             </div>
           </Link>

@@ -19,12 +19,11 @@ const CamisaDetails = ({ teamByCid }) => {
         <NavBar />
         <div className=" mx-auto lg:flex  w-[80vw]">
           <div className="w-[100%]  lg:mt-[20vh] xs:mt-[6vh]">
-            <h3 className="lg:text-[10vw] xs:text-[15vw] text-white  font-black cursor-default lg:text-right xs:text-center">
+            <h3 className="lg:text-[10vw] xs:text-[14vw] text-white  font-black cursor-default lg:text-right xs:text-center">
               {teamByCid.year}{" "}
               <span className="xs:hidden lg:visible">
-                {" "}
-                <br />{" "}
-              </span>{" "}
+                <br />
+              </span>
               {teamByCid.category}
             </h3>
           </div>
