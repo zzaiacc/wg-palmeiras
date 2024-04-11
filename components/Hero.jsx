@@ -62,7 +62,7 @@ const Hero = ({}) => {
         />
       </div>
 
-      <div className="w-[100vw] bg-greenLight absolute bottom-[-5%] -rotate-1 lg:h-[9vh]  xs:h-[3vh]  md:h-[5vh] flex justify-center ">
+      <div className="w-[100vw] bg-green absolute bottom-[-5%] -rotate-1 lg:h-[9vh]  xs:h-[3vh]  md:h-[5vh] flex justify-center ">
         <h2 className="lg:text-[6vh] xs:text-[2vh] md:text-[4vh] font-black leading-tight text-center whitespace-nowrap text-white ">
           PALMEIRAS PALMEIRAS PALMEIRAS PALMEIRAS PALMEIRAS PALMEIRAS
         </h2>
